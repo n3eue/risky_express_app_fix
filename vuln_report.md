@@ -110,7 +110,7 @@ Semgrep uses a pattern-matching engine to find specific code patterns that are k
 
 Also, developers can write custom rules to detect specific issues in their codebase. This makes Semgrep highly flexible and adaptable to different coding standards and security requirements.
 
-Like others SAST, it an be integrated into various development workflows, including CI/CD pipelines, IDEs, and code review tools and this ensures that security scans are performed consistently and automatically.
+Like others SAST, it can be integrated into various development workflows, including CI/CD pipelines, IDEs, and code review tools and this ensures that security scans are performed consistently and automatically.
 
 Of course, Semgrep is designed to be fast, making it suitable for large codebases and frequent scans.
 
