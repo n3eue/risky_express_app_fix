@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+/*Color palette*/
+--text: #0e100a;
+--background: #fafaf7;
+--primary: #99a46f;
+--secondary: #a9c9ac;
+--accent: #91baa0;
+--secondary10: hsl(126, 23%, 73%, 10%);
+--secondary20: hsl(126, 23%, 73%, 20%);
+--secondary30: hsl(126, 23%, 73%, 30%);
+}
+
+body{
+    background-color: var(--background);
+}
+
+.container{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+}
+
+
+.exut{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0px 15px;
+    justify-content: center;
+}
+
+.logo{
+    width: 12%;
+    height: auto;
+    margin-right: 15px;
+    animation: jump 2s ease-in-out infinite;
+}
+
+#logo_1{
+    color: var(--primary);
+}
+
+#logo_2, #logo_1{
+    font-weight: 800;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.logo_alter{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-top: -40px;
+}
+
+.description{
+    color: var(--text);
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.description:nth-child(3){
+    margin-top: -10px;
+}
+
+.form-l{
+    display:flex;
+    flex-flow: column nowrap;
+    align-items : center;
+    justify-content: space-evenly;
+    padding: 0px 15px;
+    background-color: var(--secondary10);
+    width: 550px;
+    height: 700px;
+    border-radius: 15px;
+}
+
+label{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.inpux{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 80%;
+    gap: 10px;
+}
+
+.inpux:nth-child(2){
+    margin-top: -15px
+}
+
+input{
+    height: 54px;
+    padding-left: 20px;
+    border-radius: 0.5rem;
+    border: none;
+    
+}
+
+button{
+    background-color: var(--secondary30);
+    color: var(--text);
+    width:80%;
+    height: 54px;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 0.5rem;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+
+button:hover{
+    background-color: var(--primary);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.log_info_check{
+    visibility: hidden;
+}
+
+#hacklink{
+    text-decoration: none;
+    color: var(--text90);
+}
+
+#hacklink:hover{
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+/* Animation for the logo */
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
