@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Palette de couleurs */
+:root {
+    --text: #0e100a;
+    --background: #fafaf7;
+    --primary: #99a46f;
+    --secondary: #a9c9ac;
+    --accent: #91baa0;
+    --secondary10: hsl(126, 23%, 73%, 10%);
+    --secondary20: hsl(126, 23%, 73%, 20%);
+    --secondary30: hsl(126, 23%, 73%, 30%);
+    --text90: hsl(80, 23%, 5%, 90%);
+}
+
+/* Reset de base */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--secondary);
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+#logout-btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+/* Intro */
+.intro{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Recherche */
+.search {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.search input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+}
+
+/* Grid des tâches */
+#task-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+/* Cartes des tâches */
+.task-card {
+    background: var(--secondary10);
+    padding: 20px 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    transition: 0.3s;
+    width: 250px;
+    height: 100px;
+}
+
+.task-card:hover {
+    background: var(--secondary20);
+}
+
+.task-card h3 {
+    margin: 0;
+    color: var(--text);
+    font-size: 16px;
+}
+
+.task-card p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.task-card .delete-btn {
+    width: 80%;
+    height: 40px;
+    background: var(--secondary);
+    color: var(--text90);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}

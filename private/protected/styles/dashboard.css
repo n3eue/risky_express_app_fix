@@ -1,0 +1,105 @@
+/* dashboard.css */
+:root {
+    --text: #0e100a;
+    --background: #fafaf7;
+    --primary: #99a46f;
+    --secondary: #a9c9ac;
+    --accent: #91baa0;
+    --secondary10: hsl(126, 23%, 73%, 10%);
+    --secondary20: hsl(126, 23%, 73%, 20%);
+    --secondary30: hsl(126, 23%, 73%, 30%);
+    --text90: hsl(80, 23%, 5%, 90%);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#logout-btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#task-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+}
+
+button {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#task-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--secondary10);
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.task-card:hover {
+    background: var(--secondary20);
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -3,10 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GreenTasks | The tasks that taste like Green Tomatoes</title>
+    <title>My Tasks | GreenTasks</title>
+    <link rel="stylesheet" href="../protected/styles/index.css">
 </head>
 <body>
-    
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../public/assets/images/rotten_logo.png" alt="GreenTasks Logo">
+            <h1>GreenTasks</h1>
+        </div>
+        <button id="logout-btn">Logout</button>
+    </nav>
 
+    <div class="container">
+        <!-- Section d'introduction -->
+        <section class="intro">
+            <h2>Welcome to GreenTasks 🌿</h2>
+            <p>Manage your tasks efficiently and stay organized with ease!</p>
+        </section>
+
+        <!-- Section de recherche -->
+        <section class="search">
+            <input type="text" id="search" placeholder="🔍 Search your tasks...">
+        </section>
+
+        <!-- Liste des tâches -->
+        <section id="task-grid">
+            <!-- Tasks will be injected dynamically -->
+        </section>
+    </div>
+
+    <script src="../protected/scripts/index.js"></script>
 </body>
 </html>

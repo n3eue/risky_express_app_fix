@@ -127,8 +127,12 @@ button:hover{
     font-weight: 700;
 }
 
-.log_info_check{
+.hidden{
     visibility: hidden;
+}
+
+.visible{
+    visibility: visible;
 }
 
 #hacklink{

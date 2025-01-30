@@ -1,0 +1,31 @@
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | GreenTasks</title>
+    <link rel="stylesheet" href="../protected/styles/dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dashboard</h1>
+            <button id="logout-btn">Logout</button>
+        </header>
+        
+        <main>
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="Enter a new task..." required>
+                <button type="submit">Add Task</button>
+            </form>
+            
+            <div id="task-container">
+                <!-- Tasks will be injected here -->
+            </div>
+        </main>
+    </div>
+    
+    <script src="../protected/scripts/dash.js"></script>
+</body>
+</html>

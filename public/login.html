@@ -16,28 +16,28 @@
             </div>
             <p class="description">Your productive adventure starts here!</p>
             <p class="description">Log in and manage your tasks with a <i>fresh</i> twist.</p>
-            <span class="log_info_check"></span>
+            <span class="warn-info hidden"></span>
         </div>
         
-        <div class="form-l">
-            
+        <form class="form-l">
             
             <!-- A user can only log in with a pseudo -->
             <div class="inpux">
                 <label for="">Username</label>
-                <input type="text" placeholder="Enter your username">
+                <input type="text" placeholder="Enter your username" id="user-y">
             </div>
             
             <!-- Password -->
             <div class="inpux">
                 <label for="">Password</label>
-                <input type="password" name="pwd_ins" id="" placeholder="Enter your password">
+                <input type="password" name="pwd_ins" placeholder="Enter your password" id="pass-z">
             </div>
             
-            <button>Splash into it</button>
+            <button id="press-x" type="submit">Splash into it</button>
             <a href="register.html" id="hacklink">First time sweetie... welcome here !</a>
             
-        </div>
-</div>
+        </form>
+    </div>
+    <script src="../public/scripts/login.js"></script>
 </body>
 </html>
